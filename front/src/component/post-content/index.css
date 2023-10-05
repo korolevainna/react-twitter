@@ -1,0 +1,20 @@
+.post-content {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .post-content__username {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .post-content__date {
+    font-size: 14px;
+    color: #8888;
+  }
+  
+  .post-content__text {
+    font-size: 14px;
+    color: #000;
+  }
