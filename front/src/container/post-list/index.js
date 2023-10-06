@@ -5,7 +5,6 @@ import Grid from "../../component/grid";
 import Box from "../../component/box";
 
 import PostCreate from "../post-create";
-
 import PostItem from "../post-item";
 
 import { Alert, Skeleton, LOAD_STATUS } from "../../component/load";
@@ -52,13 +51,18 @@ export default function Container() {
 
   useEffect(() => {
     getData();
+
     const intervalId = setInterval(() => getData(), 5000);
+
+    //const intervalId = setInterval(() => alert(123), 5000);
+
+    //alert(1);
 
     return () => {
       clearInterval(intervalId);
       alert(2);
     };
-  },);
+  },[]);
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
